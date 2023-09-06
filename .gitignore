@@ -1,52 +1,29 @@
-# Prerequisites
-*.d
+#include <stdio.h>
+int main() {
+// تعريف المتغير وطلب من المستخدم ادخال رقم
+int x;
+printf("Enter the first number: ");
+// استقبال المدخلات من المستخدم
+scanf("%d,&x);
+//اظهار المدخل المكتوب من المستخدم
+printf("The first number you entered is: %d",x);
+int y;
+printf("\n Enter the second number: ");
+scanf("%d",&y);
+printf ("The second number is: %d",y);
+// تعريف متغير الجمع
+int sum = x+y;
+printf("InThe sum is: %d" ,sum);
+//تعريف متغير الطرح
+int sub = x-y;
+printf ("\n The substraction is: %d"
+‚sub);
+//تعريف متغير الضرب
+int multi = x*y;
+printf ("\n The multipliaction is: % d", multi);
+//تعريف متغير القسمة
+int div = X/y;
+printf ("\n The division is: %d", div);
+return 0;
+}
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
